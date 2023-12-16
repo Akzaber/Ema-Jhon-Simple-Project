@@ -5,10 +5,10 @@ import './Header.css';
 const Header = () => {
 
     const pages = [
-        {name: 'Order', href:'/order'},
-        {name: 'Review', href:'/review'},
-        {name: 'Inventory', href:'/inventory'},
-        {name: 'Login', href:'/login'},
+        {name: 'Order', href:'/order', id: 1},
+        {name: 'Review', href:'/review', id: 2},
+        {name: 'Inventory', href:'/inventory', id: 3},
+        {name: 'Login', href:'/login', id: 4},
     ];
 
     return (
@@ -16,7 +16,7 @@ const Header = () => {
             <img src={logo} alt="" />
             <div>
                 {
-                    pages.map(page => <a href={page.href}>{page.name}</a>)
+                    pages.map(page => <a key={page.id} href={page.href}>{page.name}</a>)
                 }
             </div>
         </nav>

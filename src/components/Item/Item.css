@@ -1,0 +1,43 @@
+.item img{
+    width: 286px;
+    height: 286px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+
+.item{
+    border: 1px solid #2A414F;
+    border-radius: 8px;
+    width: 300px;
+    height: 508px;
+    position: relative;
+}
+
+.item p{
+    margin-top: 4px;
+}
+
+.rating-info{
+    color: #95A0A7;
+    margin: 15px;
+}
+
+.item-info{
+    margin: 0px 14px;
+}
+
+.btn-cart{
+    width: 300px;
+    margin: 0px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.btn-cart:hover{
+    background-color: #FFE0B3;
+    color: black;
+}
